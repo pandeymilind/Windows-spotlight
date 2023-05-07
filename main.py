@@ -6,7 +6,7 @@ from tkinter.filedialog import askdirectory
 root=Tk()
 root.title("Photo Gallery")
 root.geometry("890x470+300+200")
-root.iconbitmap(R'D:\computer\Study\image_copy\image\icon_1.ico')
+root.iconbitmap('image/icon_1.ico')
 Universal_color="#555657"   
 root.resizable(False,False)
 def get_data():
@@ -44,12 +44,12 @@ def image_hold():
 
 
 
-username_space_image=image_(R"D:\computer\Study\image_copy\image\Group1.png",(900,500))
+username_space_image=image_("image/Group1.png",(900,500))
 username_space=Label(image=username_space_image,bg=Universal_color)
 username_space.place(x=-5,y=-5)
 user_name_=os.getlogin()   
 
-icon_image=image_(R"D:\computer\Study\image_copy\image\icon_1.png",(110,110))
+icon_image=image_("image/icon_1.png",(110,110))
 icon_space=Label(image=icon_image,bg="#177F78")
 icon_space.place(x=778,y=0)
 
@@ -61,7 +61,7 @@ label.place(x=345,y=30)
 #select path were to copy
 
 
-folder_image=image_(R"D:\computer\Study\image_copy\image\folder.png",(70,70))
+folder_image=image_("image/folder.png",(70,70))
 button=tk.Button(root, text= "Select Folder", image=folder_image,command= file_dilog,bg="#D9D9D9",activebackground="#06234d",bd=0)
 button.place(x=60,y=180)
 
@@ -70,7 +70,7 @@ path_name.place(x=170,y=200)
 
 
 
-copy_image=image_(R"D:\computer\Study\image_copy\image\copy.png",(100,100))
+copy_image=image_("image/copy.png",(100,100))
 button1=tk.Button(root, text= "Select Folder", image=copy_image,command= image_hold,bg="#00938A",activebackground="#06234d",bd=0)
 button1.place(x=350,y=300)
 
